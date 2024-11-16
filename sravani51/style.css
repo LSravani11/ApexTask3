@@ -1,0 +1,161 @@
+/* Carousel Styles */
+.carousel {
+    position: relative;
+    width: 500px;
+    max-width:100%;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+/* Navigation buttons */
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.carousel-prev:hover, .carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .carousel {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-prev, .carousel-next {
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ff6f61;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Quiz Section */
+.quiz {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff7e6;
+}
+
+.quiz button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.quiz button:hover {
+    background-color: #ff4a3e;
+}
+
+/* Joke Section */
+.joke {
+    text-align: center;
+    padding: 30px;
+    background-color: #ffe4b5;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header nav ul {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .quiz button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+#score {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ff6f61;
+}
